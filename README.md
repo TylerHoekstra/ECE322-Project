@@ -4,7 +4,8 @@ We are testing ECE325 Lab Assignment 4.
 
 Members:
 Tyler Hoekstra - tchoekst
-Muhammed Rayyan Rashid - rashid4
+
+Muhammed Rayyan Rashid - rashid4\n
 Vinayan Kurup - vinayan
 Fardil Iqbal - fardil
 Yesith Anupa Singarachchige - singarac

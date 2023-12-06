@@ -1,0 +1,162 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  <title>Coverage Report > Zoo</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">ece325_lab_assignment4</a>
+</div>
+
+<h1>Coverage Summary for Class: Zoo (ece325_lab_assignment4)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">Zoo</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (4/4)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (20/20)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package ece325_lab_assignment4;
+&nbsp;
+&nbsp;import java.util.ArrayList;
+&nbsp;
+&nbsp;/**
+&nbsp; * You do not have to make changes to this class.
+&nbsp; *
+&nbsp; */
+&nbsp;public class Zoo {
+&nbsp;	ArrayList&lt;ZooAnimal&gt; animals;
+&nbsp;	
+&nbsp;	/** 
+&nbsp;	 * Creates a new zoo and adds the animals who currently live in the zoo to it.
+&nbsp;	 */
+<b class="fc">&nbsp;	public Zoo() {</b>
+<b class="fc">&nbsp;		animals = new ArrayList&lt;ZooAnimal&gt;();</b>
+<b class="fc">&nbsp;		addAnimals();	</b>
+&nbsp;	}	
+&nbsp;	
+&nbsp;	/**
+&nbsp;	 * Add all the animals who currently live in the zoo. After you create a Zoo object,
+&nbsp;	 * there is no need to call this method again.
+&nbsp;	 */
+&nbsp;	private void addAnimals() {
+<b class="fc">&nbsp;		animals.add(new ZooAnimal(&quot;Wunderpus photogenicus&quot;));</b>
+<b class="fc">&nbsp;		animals.add(new ZooAnimal(&quot;Spiny Lumpsucker&quot;));</b>
+<b class="fc">&nbsp;		animals.add(new ZooAnimal(&quot;Pleasing Fungus Beetle&quot;));</b>
+<b class="fc">&nbsp;		animals.add(new ZooAnimal(&quot;Pink Fairy Armadillo&quot;));</b>
+<b class="fc">&nbsp;		animals.add(new ZooAnimal(&quot;Rasberry Crazy Ant&quot;));</b>
+<b class="fc">&nbsp;		animals.add(new ZooAnimal(&quot;Satanic Leaf-Tailed Gecko&quot;));</b>
+<b class="fc">&nbsp;		animals.add(new ZooAnimal(&quot;Tasselled Wobbegong&quot;));</b>
+<b class="fc">&nbsp;		animals.add(new ZooAnimal(&quot;Hellbender&quot;));</b>
+<b class="fc">&nbsp;		animals.add(new ZooAnimal(&quot;Chicken Turtle&quot;));</b>
+<b class="fc">&nbsp;		animals.add(new ZooAnimal(&quot;Star-Nosed Mole&quot;));	</b>
+&nbsp;	}
+&nbsp;	
+&nbsp;	/**
+&nbsp;	 * Animals have a tendency to pop up randomly. This method will return you
+&nbsp;	 * a randomly selected animal from the zoo which will come up to the stage to get fed.
+&nbsp;	 * @return A randomly selected animal
+&nbsp;	 */
+&nbsp;	public ZooAnimal getRandomAnimalToComeToStage() {
+<b class="fc">&nbsp;		int index = (int) (Math.random()*animals.size());</b>
+<b class="fc">&nbsp;		return animals.get(index);</b>
+&nbsp;	}
+&nbsp;	
+&nbsp;	/**
+&nbsp;	 * Returns true iff all animals are fed.
+&nbsp;	 * @return true iff all animals are fed.
+&nbsp;	 */
+&nbsp;	public boolean allAnimalsFed() {
+<b class="fc">&nbsp;		for(ZooAnimal a : animals) {</b>
+<b class="fc">&nbsp;			if(!a.isFedAlready())</b>
+<b class="fc">&nbsp;				return false;</b>
+<b class="fc">&nbsp;		}</b>
+<b class="fc">&nbsp;		return true;</b>
+&nbsp;	}
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-12-06 02:14</div>
+</div>
+</body>
+</html>
